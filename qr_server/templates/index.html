@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de QR</title>
+    
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Enlace al Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/qr_page_icon.ico') }}">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h2>Generador de QR</h2>
+        
+        <form method="POST" id="qrForm">
+            <label for="contenido">Texto o link a codificar:</label>
+            <!-- Equivalente a tk.Entry -->
+            <input type="text" id="contenido" name="contenido" autocomplete="off">
+            
+            <!-- Equivalente al botón Generar -->
+            <button type="submit" id="btnGenerar">Generar QR</button>
+        </form>
+
+        <!-- Zona de Preview (Equivalente al tk.Label de imagen) -->
+        {% if qr_base64 %}
+        <div class="preview-box">
+            <img src="data:image/png;base64,{{ qr_base64 }}" alt="QR Generado" id="imgQR">
+            <!-- Equivalente al botón Guardar como PNG -->
+            <a href="data:image/png;base64,{{ qr_base64 }}" download="qr.png" class="btn-guardar">
+                Guardar como PNG
+            </a>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Enlace a JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
