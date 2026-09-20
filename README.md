@@ -1,6 +1,6 @@
-# 🧪 Experimento: Generador QR - De Script de Escritorio a Web App
+# 🧪 Experimento: Generador QR
 
-## 📖 Bitácora del Proyecto (Para mi yo del futuro)
+## 📖 Bitácora del Proyecto
 
 Este repositorio nace como un ejercicio práctico y experimental. El origen fue una frustración común: necesitar un código QR rápido y tener que lidiar con páginas web de terceros llenas de anuncios, registros y flujos tediosos. 
 
@@ -80,9 +80,8 @@ Para romper la barrera del "localhost" sin tener que lidiar con configuraciones 
 
 **Pasos para usar Ngrok:**
 1.  Ir a la página oficial de [Ngrok](https://ngrok.com/) y crear una cuenta gratuita.
-2.  Descargar el ejecutable para Windows.
-3.  Seguir las instrucciones en su panel (Dashboard) para agregar tu token de autenticación en la consola (esto se hace una sola vez).
-4.  Con tu servidor Flask corriendo en una terminal, abres otra terminal y ejecutas:
+2.  Seguir las instrucciones en su panel para iniciar tu autenticación.
+3.  Con tu servidor Flask corriendo en una terminal, abres otra terminal y ejecutas:
     ```cmd
     ngrok http 5000
     ```
