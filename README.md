@@ -54,7 +54,7 @@ Partimos del script base `generar_qr_gui.py`. El objetivo es tener un programa a
 *   **La Compilación:** Usamos PyInstaller. Con el `venv` activado, ejecutamos:
 
 ```cmd
-pyinstaller --onefile --windowed --icon=tu_icono.ico generar_qr_gui.py
+pyinstaller --onefile --windowed --icon=qr_page_icon.ico generar_qr_gui.py
 ```
 
 *   `--onefile`: Empaqueta Python, Tkinter y nuestro código en un solo archivo autoextraíble.
