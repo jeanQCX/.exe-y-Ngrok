@@ -1,4 +1,4 @@
-# 🧪 Experimento: Generador QR
+# Generador QR
 
 ## 📖 Bitácora del Proyecto
 
