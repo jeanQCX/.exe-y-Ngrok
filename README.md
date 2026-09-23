@@ -83,7 +83,7 @@ Para romper la barrera del "localhost" sin tener que lidiar con configuraciones 
 2.  Seguir las instrucciones en su panel para iniciar tu autenticación.
 3.  Con tu servidor Flask corriendo en una terminal, abres otra terminal y ejecutas:
     ```cmd
-    ngrok http 80 --url https://saffron-lion-motivator.ngrok-free.dev
+    ngrok http 5000 --url https://saffron-lion-motivator.ngrok-free.dev
     ```
 
 **¿Qué pasa ahora?** Ngrok te da un enlace público (ej. `https://algo.ngrok-free.app`). Cuando alguien entra ahí desde su celular, Ngrok empuja esa visita de forma segura hacia el puerto 5000 de tu computadora. ¡Ya está en internet!
